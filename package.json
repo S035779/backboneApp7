@@ -1,0 +1,29 @@
+{
+  "name": "backbone-js-sample-app7",
+  "version": "0.0.1",
+  "description": "Backbone.js RESTful sample model #7.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S035779/backboneApp7.git"
+  },
+  "keywords": [
+    "backbone.js"
+  ],
+  "author": "Mamoru Hashimoto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/S035779/backboneApp7/issues"
+  },
+  "homepage": "https://github.com/S035779/backboneApp7#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.20",
+    "serve-favicon": "^2.3.0"
+  }
+}
