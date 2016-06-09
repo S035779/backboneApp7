@@ -16,7 +16,8 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="./index.html">Backbone Memo Application</a>
+            <a class="brand" href="/">Backbone Memo Application</a>
+            <a class="create btn btn-primary pull-right">Create</a>
         </div>
     </div>
 </div>
@@ -24,10 +25,11 @@
 <div id="main" class="container">
     <h1>Memo</h1>
  
-    <form id="addForm" class="form">
+    <form id="editForm" class="form" style="display: none">
         <input type="text" name="title" class="input-block-level" placeholder="Title"/>
         <textarea rows="5" name="content" class="input-block-level" placeholder="Content"></textarea>
-        <a href="#" id="addBtn" class="btn btn-primary">Add</a>
+        <a id="saveBtn" class="btn btn-primary">Save</a>
+        <a id="cancelBtn" class="btn">Cancel</a>
     </form>
  
     <div id="memoList" class="row-fluid">
@@ -37,7 +39,7 @@
 <script type="text/template" id="tmpl-itemview">
     <h3><%= title %></h3>
     <p><%= content %></p>
-    <p><a href="#" class="delete">delete</a></p>
+    <p><a class="edit">edit</a> <a class="delete">delete</a></p>
 </script>
  
 <script src="lib/js/jquery.js"></script>
